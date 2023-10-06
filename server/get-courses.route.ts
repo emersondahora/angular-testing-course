@@ -6,9 +6,9 @@ import {COURSES} from "./db-data";
 
 
 export function getAllCourses(req: Request, res: Response) {
-
+  setTimeout(function() {
     res.status(200).json({payload:Object.values(COURSES)});
-
+  },5000);
 }
 
 
